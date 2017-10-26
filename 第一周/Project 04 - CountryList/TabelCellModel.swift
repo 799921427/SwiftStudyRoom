@@ -11,8 +11,8 @@ import UIKit
 class TabelCellModel: NSObject {
     
     var level:Int?
-    var name:String?
-    var subItems:NSMutableArray?
+    var name:String! = ""
+    var subItems:[Any]?
     var dev_id:String?
     var isOpen:Bool?
         
@@ -20,7 +20,7 @@ class TabelCellModel: NSObject {
     {
         super.init()
         self.isOpen = false
-        self.subItems = NSMutableArray.init()
+        self.subItems = [Any]()
     }
 
 }

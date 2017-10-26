@@ -8,39 +8,44 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
-    var levelModel:TabelCellModel?
+class TableModelCell: UITableViewCell {
+    var levelModel:TabelCellModel? {
+        didSet{
+            setLevelModel()
+        }
+       
+    }
     var nameLabel:UILabel?
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?)
     {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.nameLabel = UILabel.init()
-        self.contentView.addSubview(self.nameLabel!)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setLevelModel(levelModel:TabelCellModel)
+    func setLevelModel()
     {
-        self.levelModel = levelModel
-        var nameX = Float(0)
+        print("fddfssd")
+        var nameX = Float(20)
         let nameY = Float(0)
         let nameW = Float(100)
         let nameH = Float(44)
-        if(levelModel.level==1)
+        if(levelModel?.level==2)
         {
-            nameX = 20
+            nameX += 20
         }
-        else if(levelModel.level!==2)
+        else if(levelModel?.level==3)
         {
-            nameX = 40
+            nameX += 40
         }
+        self.contentView.addSubview(self.nameLabel!)
         self.nameLabel?.frame = CGRect(x:CGFloat(nameX), y:CGFloat(nameY), width:CGFloat(nameW), height:CGFloat(nameH))
-        self.nameLabel?.text = levelModel.name!
-        
+        self.nameLabel?.text = levelModel!.name
      }
     override func awakeFromNib() {
         super.awakeFromNib()

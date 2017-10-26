@@ -15,7 +15,7 @@
 		0778CC0E1F9AE98100B9E632 /* Project_04___CountryListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0778CC0D1F9AE98100B9E632 /* Project_04___CountryListTests.swift */; };
 		0778CC191F9AE98200B9E632 /* Project_04___CountryListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0778CC181F9AE98200B9E632 /* Project_04___CountryListUITests.swift */; };
 		0778CC2D1F9C540C00B9E632 /* TabelCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0778CC2C1F9C540C00B9E632 /* TabelCellModel.swift */; };
-		0778CC2F1F9C553800B9E632 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0778CC2E1F9C553800B9E632 /* TableViewCell.swift */; };
+		0778CC311FA0A2E200B9E632 /* TableModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0778CC301FA0A2E000B9E632 /* TableModelCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		0778CC181F9AE98200B9E632 /* Project_04___CountryListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_04___CountryListUITests.swift"; sourceTree = "<group>"; };
 		0778CC1A1F9AE98200B9E632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0778CC2C1F9C540C00B9E632 /* TabelCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabelCellModel.swift; path = ../TabelCellModel.swift; sourceTree = "<group>"; };
-		0778CC2E1F9C553800B9E632 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../TableViewCell.swift; sourceTree = "<group>"; };
+		0778CC301FA0A2E000B9E632 /* TableModelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableModelCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				0778CBF81F9AE97500B9E632 /* AppDelegate.swift */,
-				0778CC2E1F9C553800B9E632 /* TableViewCell.swift */,
+				0778CC301FA0A2E000B9E632 /* TableModelCell.swift */,
 				0778CC2C1F9C540C00B9E632 /* TabelCellModel.swift */,
 				0778CBFA1F9AE97500B9E632 /* ViewController.swift */,
 				0778CBFC1F9AE97600B9E632 /* Main.storyboard */,
@@ -269,9 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0778CC2D1F9C540C00B9E632 /* TabelCellModel.swift in Sources */,
-				0778CC2F1F9C553800B9E632 /* TableViewCell.swift in Sources */,
 				0778CBFB1F9AE97500B9E632 /* ViewController.swift in Sources */,
 				0778CBF91F9AE97500B9E632 /* AppDelegate.swift in Sources */,
+				0778CC311FA0A2E200B9E632 /* TableModelCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
